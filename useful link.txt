@@ -1,0 +1,43 @@
+http://guides.rubyonrails.org/association_basics.html
+
+
+Commands
+1. Create records in database
+	category = Category.new(:name => "News")
+	category.save
+	category = Category.create(:name => "Tutorials")
+2. Show records
+	post = Post.find(1)
+	post.title
+3. Destroy records
+	post.destroy
+4. Update records
+ 	post.update_attribute(:title,"This is updated title of first post")
+5. Generate controller
+	rails g controller categories index edit new show
+6. Using scaffold in rails
+	rails g scaffold Category name:string
+7. push to heroku
+	git push heroku master
+8. Migrate database
+	heroku run rake db:migrate
+	heroku addons:add pgbackups
+9. Install bundle
+	bundle install
+10. gererate active admin
+	rails generate active_admin:install
+11. generate active_admin category or post
+rails g active_admin:resource Category
+
+C:\Program Files\TortoiseGit\bin\TortoiseGitPlink.exe
+
+"C:/Program Files/PostgreSQL/9.4/bin\pg_dump.exe" -Fc --no-acl --no-owner -h localhost -U postgres myrubyblog > myrubyblog.dump
+
+http://ndesign-studio.com/about
+
+admin@example.com
+password
+
+table_for Post.order("id desc").limit(15), {:sortable => true, :class => 'index_table'} do
+
+

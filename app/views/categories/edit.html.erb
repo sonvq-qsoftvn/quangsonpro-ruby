@@ -1,0 +1,12 @@
+<h1>Edit Category</h1>
+<%= form_for @category do |f| %>
+    <p>
+        <%= f.label :name %><br/>
+        <%= f.text_field :name %><br/>
+    </p>
+    <p>
+        <%= f.submit "Update Category" %>
+    </p>
+<% end %>
+<%= link_to "Go Back", category_path %>
+
